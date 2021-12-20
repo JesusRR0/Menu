@@ -5,9 +5,13 @@
 }
 body{
     background-image:url(./image/fondo.png);
+    background-size: cover;
 }
-li:not(.principal){
+/*li:not(.principal){
     display:none;
+}*/
+li:first-child{
+    padding-top:2vw;
 }
 li{
     color:whitesmoke;
@@ -15,9 +19,11 @@ li{
     font-weight: bold;
     width: 200px;
     height:100px;
-    font-size:1.5em;
+    font-size:20px;
     display:block;
-    
+    padding-top:2vw;
+    background-color: crimson;
+   
 }
 nav{
     height: 100px;
@@ -30,11 +36,13 @@ nav{
     float:left;
     padding:2vw;
     position:relative;
+    
 }
 a{
     text-decoration: none;
     color:whitesmoke;
-   
+    text-align: center;
+    
 }
 main{
     clear:both;
@@ -55,11 +63,88 @@ div{
     
 }
 
-.principal:hover{
+li:hover{
     display: block;
-    
     background-color:#2E0404;
 }
-.secundario{
+
+.emociones:hover .alegria{
+    display: block;
+}
+.sentimientos:hover .sent2{
+    display:block;
+}
+
+
+.alegria{
+    position:relative;
+    right:38px;
+    top:39px;
+    display:none;
+
+}
+
+.positivo{
+    position:relative;
+    right:40px;
+    top:39px;
+    display:none;
     
+}
+.listaPositivo{
+    position:relative;
+    left:198px;
+    top:-64px;
+    display:none;
+}
+.neutro{
+    position:relative;
+    right:40px;
+    top:32px;
+    display:none;
+
+    
+}
+.listaNeutro{
+    position:relative;
+    left:200px;
+    top:-80px;
+    display:none;
+    
+}
+.negativo{
+    position:relative;
+    right:40px;
+    top:32px;
+    display:none;
+
+}
+.listaNegativo{
+    position:relative;
+    left:198px;
+    top:-75px;
+    display:none;
+    
+}
+.simple{
+    position:relative;
+    top:15px;
+    display:none;
+    
+}
+
+.listaSimple{
+    position:relative;
+    left:198px;
+    top:-61px;
+    display:none;
+    
+    
+}
+
+.listaComplejo{
+    position:relative;
+    left:198px;
+    top:-46px;
+    display:none;
 }
